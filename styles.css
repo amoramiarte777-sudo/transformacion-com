@@ -50,6 +50,23 @@ body {
   z-index: -3;
 }
 
+.video-bg iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+/* Solo para computadoras (pantallas anchas) */
+@media (min-aspect-ratio: 16/9) {
+    .video-bg iframe {
+        height: 300%; /* Estira la altura para que el ancho cubra todo */
+        top: 50%;
+    }
+}
+
 img {
   display: block;
   max-width: 100%;
