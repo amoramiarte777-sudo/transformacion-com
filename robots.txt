@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://transformacion-com.vercel.app/sitemap.xml
