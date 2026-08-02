@@ -43,9 +43,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;/* Esto limita el video a la parte superior */
+  height: 400px;
   overflow: hidden;
-  /*z-index: -3;       /* Ya no necesita ser negativo */
+  background: var(--bg);
 }
 
 img {
@@ -797,5 +797,5 @@ img {
 .video-bg video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
