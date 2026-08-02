@@ -8,10 +8,14 @@ if (year) {
 
 if (menuToggle && menu) {
   menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('open');
+    const isOpen = menu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
   });
 
   menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => menu.classList.remove('open'));
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
