@@ -3,52 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PestanaTech | Especialista en Reparación de TV y PCs en Cartagena</title>
+  <title>PestañaTech | Especialista en Reparación de TV y PCs en Cartagena</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrapper nav">
-      <a class="brand" href="/">
-        <img src="assets/img/logo-nuevo.jpg" alt="PestañaTech" />
-        <span><strong>PestanaTech</strong><small>Servicio Técnico Profesional</small></span>
+      <a class="brand" href="#inicio">
+        <img src="assets/img/logo.png" alt="Logo PestañaTech" />
+        <span>
+          <strong>PestañaTech</strong>
+          <small>Servicio Técnico Profesional</small>
+        </span>
       </a>
       <nav class="menu">
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
-        <a class="btn-whatsapp" href="https://wa.me/573163392695" target="_blank">WhatsApp</a>
+        <a class="btn-primary" href="https://wa.me/573163392695" target="_blank">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrapper">
-      <h1>Expertos en Reparación de TV y Computadores</h1>
-      <p>Diagnóstico preciso y atención a domicilio en toda Cartagena. Recupera tu equipo con profesionales.</p>
-      <a class="btn-main" href="https://wa.me/573163392695" target="_blank">Agendar Visita Técnica</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrapper">
+        <h1>PestañaTech: Expertos en Reparación de TV y Computadores</h1>
+        <p>Más de 25 años de experiencia técnica en Cartagena. Soluciones rápidas, garantizadas y a domicilio.</p>
+        <a class="btn-primary" href="https://wa.me/573163392695" target="_blank">Solicitar Visita Técnica</a>
+      </div>
+    </section>
 
-  <section class="services-wrapper" id="servicios">
-    <h2>Nuestros Servicios Especializados</h2>
-    <div class="grid">
-      <article class="card">
-        <img src="assets/img/imgtv.jpg" alt="TV">
-        <h3>Reparación de TV</h3>
-        <p>Solución a fallas de imagen y sonido.</p>
-      </article>
-      <article class="card">
-        <img src="assets/img/cambiodeleds.jpg" alt="LEDs">
-        <h3>Cambio de LEDs</h3>
-        <p>Restauración total de brillo y color.</p>
-      </article>
-      <article class="card">
-        <img src="assets/img/computador.jpg" alt="PC">
-        <h3>Soporte PC</h3>
-        <p>Mantenimiento y optimización de software.</p>
-      </article>
-    </div>
-  </section>
+    <section class="section wrapper" id="servicios">
+      <h2 style="text-align: center; margin-bottom: 40px;">Nuestros Servicios</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/imgtv.jpg" alt="Reparación TV">
+          <h3>Reparación de Televisores</h3>
+          <p>Expertos en fallas de imagen, sonido y tarjetas.</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/cambiodeleds.jpg" alt="Cambio LEDs">
+          <h3>Cambio de LEDs</h3>
+          <p>Recupera la iluminación original de tu pantalla.</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/computador.jpg" alt="Soporte PC">
+          <h3>Reparación de Computadores</h3>
+          <p>Optimización, software y mantenimiento preventivo.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="https://wa.me/573163392695" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>
