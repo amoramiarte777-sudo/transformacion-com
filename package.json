@@ -1,0 +1,19 @@
+{
+  "name": "transformacion-com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o assets/css/tailwind.css --minify",
+    "dev": "tailwindcss -i src/input.css -o assets/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "lucide-static": "^1.49.0",
+    "simple-icons": "^16.33.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true
+}

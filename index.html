@@ -1,64 +1,263 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PestañaTech | Especialista en Reparación de TV y PCs en Cartagena</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reparación de televisores en Cartagena | Técnico Samsung y LG a domicilio</title>
+<meta name="description" content="Reparación de televisores Samsung y LG en Cartagena: cambio de LEDs, fuentes y tarjetas, a domicilio. Diagnóstico claro antes de reparar y 90 días de garantía." />
+<meta name="author" content="César Pestana" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="theme-color" content="#0A1A2F" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="canonical" href="https://tecnico.pestanatech.com/" />
+
+<meta property="og:locale" content="es_CO" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="PestañaTech" />
+<meta property="og:title" content="Reparación de televisores en Cartagena | Samsung y LG a domicilio" />
+<meta property="og:description" content="Diagnóstico claro antes de reparar, cambio de LEDs y 90 días de garantía. Escríbeme por WhatsApp." />
+<meta property="og:url" content="https://tecnico.pestanatech.com/" />
+<meta property="og:image" content="https://tecnico.pestanatech.com/assets/img/og-pestanatech.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/tailwind.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "ElectronicsStore"],
+      "@id": "https://tecnico.pestanatech.com/#negocio",
+      "name": "PestañaTech – Servicio Técnico Profesional",
+      "description": "Reparación de televisores Samsung y LG, cambio de LEDs y soporte para computadores a domicilio en Cartagena.",
+      "url": "https://tecnico.pestanatech.com/",
+      "image": "https://tecnico.pestanatech.com/assets/img/og-pestanatech.jpg",
+      "telephone": "+573163392695",
+      "priceRange": "$$",
+      "founder": { "@type": "Person", "name": "César Pestana" },
+      "address": { "@type": "PostalAddress", "addressLocality": "Cartagena", "addressRegion": "Bolívar", "addressCountry": "CO" },
+      "areaServed": { "@type": "City", "name": "Cartagena" },
+      "sameAs": [
+        "https://www.instagram.com/transformacionc777/?hl=es-es",
+        "https://www.facebook.com/profile.php?id=61564279358782",
+        "https://www.tiktok.com/@transformacion.tech?lang=es",
+        "https://youtube.com/shorts/0LBTBfWmjx4"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Atiendes a domicilio en Cartagena?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Reviso y reparo el equipo en tu casa cuando el caso lo permite; si necesita taller, te lo explico antes." } },
+        { "@type": "Question", "name": "¿Tienen garantía las reparaciones?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, 90 días sobre mano de obra y piezas reemplazadas, según los términos y condiciones." } },
+        { "@type": "Question", "name": "¿Cuánto cuesta reparar un televisor?", "acceptedAnswer": { "@type": "Answer", "text": "Depende de la falla y del modelo. Primero reviso, te explico qué tiene y te doy el valor antes de reparar." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
-<body>
 
-  <header class="site-header">
-    <div class="wrapper nav">
-      <a class="brand" href="#inicio">
-        <img src="assets/img/logo.png" alt="Logo PestañaTech" />
-        <span>
-          <strong>PestañaTech</strong>
-          <small>Servicio Técnico Profesional</small>
-        </span>
+<body class="bg-panel font-sans text-ink antialiased">
+
+<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">Saltar al contenido</a>
+
+<header class="sticky top-0 z-40 border-b border-ink/10 bg-white/90 backdrop-blur">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="PestañaTech, inicio">
+      <img src="assets/img/logo-160.png" width="40" height="40" alt="" class="size-10 rounded-lg" />
+      <span class="leading-tight">
+        <strong class="display block text-base">PestañaTech</strong>
+        <span class="text-xs text-ink/60">Servicio técnico profesional</span>
+      </span>
+    </a>
+    <button id="menuBtn" class="rounded-lg p-2 md:hidden" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <svg class="size-6"><use href="assets/icons/sprite.svg#menu" /></svg>
+    </button>
+    <nav id="menu" class="absolute inset-x-0 top-16 hidden flex-col gap-1 border-b border-ink/10 bg-white p-4 text-sm font-medium md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
+      <a class="py-2 hover:text-brand" href="#diagnostico">Diagnóstico</a>
+      <a class="py-2 hover:text-brand" href="#servicios">Servicios</a>
+      <a class="py-2 hover:text-brand" href="#tecnico">Sobre mí</a>
+      <a class="py-2 hover:text-brand" href="#proceso">Proceso</a>
+      <a class="py-2 hover:text-brand" href="#faq">Preguntas</a>
+      <a class="inline-flex items-center justify-center gap-2 rounded-lg bg-wa px-4 py-2.5 text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20t%C3%A9cnico" target="_blank" rel="noopener">
+        <svg class="size-4"><use href="assets/icons/sprite.svg#wa" /></svg> WhatsApp
       </a>
-      <nav class="menu">
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a class="btn-primary" href="https://wa.me/573163392695" target="_blank">WhatsApp</a>
-      </nav>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- HERO -->
+<section id="inicio" class="bg-ink text-white">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:grid-cols-[1.25fr_1fr] md:py-20">
+    <div>
+      <p class="mb-4 flex items-center gap-2 text-sm text-white/70"><span class="size-2 rounded-full bg-standby"></span>Técnico de televisores en Cartagena, Bolívar</p>
+      <h1 class="display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-6xl">Reparación de televisores en Cartagena, con diagnóstico claro antes de tocar nada</h1>
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80">Soy César Pestana, técnico con más de 25 años en electrónica. Reparo televisores Samsung y LG, cambio LEDs y arreglo computadores, en tu casa.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="inline-flex items-center gap-2 rounded-lg bg-wa px-6 py-3.5 font-semibold text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20ayuda%20con%20mi%20equipo" target="_blank" rel="noopener"><svg class="size-5"><use href="assets/icons/sprite.svg#wa" /></svg>Escribir por WhatsApp</a>
+        <a class="inline-flex items-center gap-2 rounded-lg border border-white/30 px-6 py-3.5 font-semibold hover:bg-white/10" href="#diagnostico">Diagnosticar mi TV<svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+      </div>
+      <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/15 pt-6">
+        <div><dt class="text-sm text-white/60">Experiencia</dt><dd class="display text-xl font-bold">+25 años</dd></div>
+        <div><dt class="text-sm text-white/60">Garantía</dt><dd class="display text-xl font-bold">90 días</dd></div>
+        <div><dt class="text-sm text-white/60">Servicio</dt><dd class="display text-xl font-bold">A domicilio</dd></div>
+        <div><dt class="text-sm text-white/60">Marcas</dt><dd class="display text-xl font-bold">Samsung y LG</dd></div>
+      </dl>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="wrapper">
-        <h1>PestañaTech: Expertos en Reparación de TV y Computadores</h1>
-        <p>Más de 25 años de experiencia técnica en Cartagena. Soluciones rápidas, garantizadas y a domicilio.</p>
-        <a class="btn-primary" href="https://wa.me/573163392695" target="_blank">Solicitar Visita Técnica</a>
+    <!-- Video dentro de un marco de televisor con su LED de standby -->
+    <div class="mx-auto w-full max-w-[280px]">
+      <div class="relative rounded-[1.4rem] border-[10px] border-b-[26px] border-[#050d18] bg-black shadow-2xl ring-1 ring-white/10">
+        <video id="heroVideo" class="aspect-[9/16] w-full rounded-lg object-cover" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg" aria-label="Técnico reparando un televisor">
+          <source src="video/hero.mp4" type="video/mp4" />
+        </video>
+        <span class="absolute -bottom-[18px] right-3 size-2 animate-pulse rounded-full bg-standby motion-reduce:animate-none" aria-hidden="true"></span>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section wrapper" id="servicios">
-      <h2 style="text-align: center; margin-bottom: 40px;">Nuestros Servicios</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="assets/img/imgtv.jpg" alt="Reparación TV">
-          <h3>Reparación de Televisores</h3>
-          <p>Expertos en fallas de imagen, sonido y tarjetas.</p>
-        </article>
-        <article class="card">
-          <img src="assets/img/cambiodeleds.jpg" alt="Cambio LEDs">
-          <h3>Cambio de LEDs</h3>
-          <p>Recupera la iluminación original de tu pantalla.</p>
-        </article>
-        <article class="card">
-          <img src="assets/img/computador.jpg" alt="Soporte PC">
-          <h3>Reparación de Computadores</h3>
-          <p>Optimización, software y mantenimiento preventivo.</p>
-        </article>
+<!-- DIAGNÓSTICO -->
+<section id="diagnostico" class="mx-auto max-w-6xl scroll-mt-16 px-5 py-20">
+  <div class="max-w-2xl">
+    <h2 class="display text-3xl font-extrabold sm:text-4xl">¿Qué le pasa a tu televisor?</h2>
+    <p class="mt-4 text-lg text-ink/70">Elige lo que ves y te digo la causa más probable y qué puedes probar antes de llamar. Es una orientación: el diagnóstico real se hace con el equipo en la mano.</p>
+  </div>
+
+  <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
+    <div id="sintomas" role="radiogroup" aria-label="Síntoma del televisor" class="grid gap-2"></div>
+
+    <div class="rounded-2xl bg-ink p-6 text-white sm:p-8 lg:sticky lg:top-24 lg:self-start" aria-live="polite">
+      <div class="flex items-center gap-3 text-sm text-white/70"><span id="led" class="size-2.5 rounded-full bg-standby transition-colors"></span><span id="estado">En espera: elige un síntoma</span></div>
+      <div id="resultado" class="mt-5">
+        <p class="display text-2xl font-bold">Empecemos por lo que ves en la pantalla.</p>
+        <p class="mt-3 text-white/70">Cuando elijas un síntoma verás aquí la causa probable, una prueba sencilla que puedes hacer tú y lo que haría yo en la revisión.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <a class="floating-whatsapp" href="https://wa.me/573163392695" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+<!-- SERVICIOS -->
+<section id="servicios" class="scroll-mt-16 bg-white py-20">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="display max-w-2xl text-3xl font-extrabold sm:text-4xl">Servicios técnicos en Cartagena</h2>
+    <div class="mt-10 divide-y divide-ink/10 border-y border-ink/10">
+      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+        <img src="assets/img/imgtv.jpg" width="392" height="404" loading="lazy" alt="Placa de un televisor abierto en reparación" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
+        <div>
+          <h3 class="display text-2xl font-bold">Reparación de televisores</h3>
+          <p class="mt-2 max-w-xl text-ink/70">Fallas de imagen, sonido, encendido y conexión en Samsung y LG: fuentes de poder, tarjetas y T-con.</p>
+          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Diagnóstico técnico</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Valor antes de reparar</span></p>
+        </div>
+        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20mi%20televisor%20tiene%20una%20falla%20y%20quiero%20cotizar%20la%20reparaci%C3%B3n" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+      </article>
+      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+        <img src="assets/img/cambiodeleds.jpg" width="376" height="312" loading="lazy" alt="Tiras LED de un televisor durante el cambio" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
+        <div>
+          <h3 class="display text-2xl font-bold">Cambio de LEDs</h3>
+          <p class="mt-2 max-w-xl text-ink/70">Si la imagen se ve oscura o se apaga a los segundos, casi siempre es la luz de fondo. Cambio las tiras y reviso la pantalla al terminar.</p>
+          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>A domicilio</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Prueba final contigo presente</span></p>
+        </div>
+        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20el%20cambio%20de%20LEDs%20de%20mi%20televisor" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+      </article>
+      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+        <img src="assets/img/computador.jpg" width="339" height="355" loading="lazy" alt="Portátil en revisión técnica" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
+        <div>
+          <h3 class="display text-2xl font-bold">Computadores y software</h3>
+          <p class="mt-2 max-w-xl text-ink/70">Mantenimiento, revisión de hardware, instalación de programas y optimización para equipos de trabajo o de casa.</p>
+          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Mantenimiento preventivo</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Soporte de software</span></p>
+        </div>
+        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20soporte%20para%20mi%20computador" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="tecnico" class="mx-auto grid max-w-6xl scroll-mt-16 items-center gap-10 px-5 py-20 md:grid-cols-2">
+  <img src="assets/img/transformacion.jpg" width="374" height="293" loading="lazy" alt="César Pestana trabajando en la tarjeta de un televisor" class="w-full rounded-2xl object-cover" />
+  <div>
+    <h2 class="display text-3xl font-extrabold sm:text-4xl">Más de 25 años entre placas, fuentes y pantallas</h2>
+    <p class="mt-5 text-lg leading-relaxed text-ink/75">Trabajo directo con cada cliente: reviso, te explico la falla en palabras sencillas y solo reparo cuando aceptas el valor. Si un televisor no vale la pena repararlo, te lo digo de frente.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a data-google="profile" hidden class="inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-3 font-semibold text-white hover:bg-brand" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#pin" /></svg>Ver mi perfil en Google</a>
+      <a data-google="reviews" hidden class="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-5 py-3 font-semibold hover:bg-white" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#star" /></svg>Leer reseñas de clientes</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" class="scroll-mt-16 bg-white py-20">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 class="display max-w-2xl text-3xl font-extrabold sm:text-4xl">Cómo trabajo, paso a paso</h2>
+    <ol class="mt-10 grid gap-8 md:grid-cols-3">
+      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 1</span><h3 class="display mt-1 text-xl font-bold">Me escribes por WhatsApp</h3><p class="mt-2 text-ink/70">Me cuentas la falla, la marca y, si puedes, mandas una foto. Te respondo con una primera orientación, sin compromiso.</p></li>
+      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 2</span><h3 class="display mt-1 text-xl font-bold">Reviso y te doy el valor</h3><p class="mt-2 text-ink/70">Diagnostico el equipo, te explico qué tiene y cuánto cuesta. No reparo nada sin tu aprobación.</p></li>
+      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 3</span><h3 class="display mt-1 text-xl font-bold">Reparo y lo probamos juntos</h3><p class="mt-2 text-ink/70">Repongo las piezas, verificamos que todo funcione contigo presente y queda cubierto por 90 días de garantía.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="mx-auto max-w-3xl scroll-mt-16 px-5 py-20">
+  <h2 class="display text-3xl font-extrabold sm:text-4xl">Preguntas frecuentes</h2>
+  <div class="mt-8 divide-y divide-ink/10 border-y border-ink/10">
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Atiendes a domicilio en Cartagena?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí. Reviso y reparo el equipo en tu casa cuando el caso lo permite; si necesita taller, te lo explico antes de llevármelo.</p></details>
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Trabajas televisores Samsung y LG?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí, son las marcas con las que más trabajo. Si tu televisor es de otra marca, mándame el modelo por WhatsApp y te confirmo.</p></details>
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Cuánto cuesta reparar un televisor?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Depende de la falla y del modelo. Primero reviso, te explico qué tiene y te doy el valor antes de reparar.</p></details>
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Tiene garantía la reparación?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí, 90 días sobre mano de obra y piezas reemplazadas. No cubre golpes, humedad, variaciones eléctricas ni intervenciones de terceros. Está detallado en los <a class="underline" href="terms.html">términos y condiciones</a>.</p></details>
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Y si mi televisor ya no tiene arreglo?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Te lo digo antes de gastar. Un panel roto o con manchas negras por golpe casi nunca es rentable de reparar.</p></details>
+    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿También revisas computadores?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí: mantenimiento, revisión de hardware, instalación de programas y optimización.</p></details>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="bg-ink py-20 text-white">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[1.2fr_1fr]">
+    <div>
+      <h2 class="display text-3xl font-extrabold sm:text-4xl">¿Tu televisor o computador está fallando?</h2>
+      <p class="mt-4 max-w-lg text-lg text-white/75">Escríbeme por WhatsApp y te respondo con un diagnóstico claro y sin compromiso.</p>
+      <a class="mt-8 inline-flex items-center gap-2 rounded-lg bg-wa px-7 py-4 font-semibold text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener"><svg class="size-5"><use href="assets/icons/sprite.svg#wa" /></svg>Escribir ahora</a>
+    </div>
+    <div class="grid gap-8 sm:grid-cols-2">
+      <div class="grid content-start gap-3">
+        <h3 class="display font-bold">Contacto</h3>
+        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="tel:+573163392695"><svg class="size-4"><use href="assets/icons/sprite.svg#phone" /></svg>316 339 2695</a>
+        <span class="flex items-center gap-2 text-white/80"><svg class="size-4"><use href="assets/icons/sprite.svg#pin" /></svg>Cartagena, Colombia</span>
+        <a data-google="profile" hidden class="flex items-center gap-2 text-white/80 hover:text-white" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#star" /></svg>Google Maps y reseñas</a>
+      </div>
+      <div class="grid content-start gap-3">
+        <h3 class="display font-bold">Redes</h3>
+        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.instagram.com/transformacionc777/?hl=es-es" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#ig" /></svg>Instagram</a>
+        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.facebook.com/profile.php?id=61564279358782" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#fb" /></svg>Facebook</a>
+        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.tiktok.com/@transformacion.tech?lang=es" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#tt" /></svg>TikTok</a>
+        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://youtube.com/shorts/0LBTBfWmjx4" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#yt" /></svg>YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#06111f] py-6 text-sm text-white/60">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5">
+    <p>© <span id="year"></span> PestañaTech · Servicio técnico profesional</p>
+    <p><a class="underline hover:text-white" href="terms.html">Términos y condiciones</a> · <a class="underline hover:text-white" href="terminos_condiciones.pdf" target="_blank" rel="noopener">PDF</a></p>
+  </div>
+</footer>
+
+<a class="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-wa text-white shadow-lg hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg class="size-7"><use href="assets/icons/sprite.svg#wa" /></svg></a>
+
+<script src="script.js" defer></script>
 </body>
 </html>

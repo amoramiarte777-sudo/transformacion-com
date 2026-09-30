@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a1a2f;
+  --color-panel: #f3f6f9;
+  --color-brand: #0b6f8e;
+  --color-standby: #ef3b2d;
+  --color-wa: #0e7c43;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  :focus-visible { outline: 2px solid var(--color-brand); outline-offset: 3px; }
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-stretch: 112%;
+  letter-spacing: -0.01em;
+}
