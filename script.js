@@ -51,7 +51,7 @@ const SINTOMAS = [
 ];
 
 const lista = $('#sintomas'), res = $('#resultado'), led = $('#led'), estado = $('#estado');
-let marca = 'Samsung';
+let marca = '';
 
 SINTOMAS.forEach(s => {
   const b = document.createElement('button');
@@ -66,7 +66,7 @@ function mostrar(s) {
   lista.querySelectorAll('button').forEach(b => b.setAttribute('aria-checked', String(b.dataset.id === s.id)));
   led.classList.replace('bg-standby', 'bg-cyan-400');
   estado.textContent = 'Diagnóstico orientativo listo';
-  const msg = `Hola César, mi televisor ${marca} tiene este problema: ${s.t.toLowerCase()}. Vi que podría ser: ${s.causa.toLowerCase()}. ¿Me puedes ayudar?`;
+  const msg = () => `Hola César, mi televisor${marca ? ' ' + marca : ''} tiene este problema: ${s.t.toLowerCase()}. Vi que podría ser: ${s.causa.toLowerCase()}. ¿Me puedes ayudar?`;
   res.innerHTML = `
     <p class="text-sm text-white/60">Causa más probable</p>
     <p class="display mt-1 text-2xl font-bold">${s.causa}</p>
@@ -75,15 +75,15 @@ function mostrar(s) {
     <p class="mt-5 text-sm text-white/60">Lo que haría en la revisión</p>
     <p class="mt-1 text-white/85">${s.hago}</p>
     <div class="mt-7 flex flex-wrap items-center gap-3">
-      <label class="text-sm text-white/70" for="marca">Marca</label>
+      <label class="text-sm text-white/70" for="marca">Marca (opcional)</label>
       <select id="marca" class="rounded-lg border border-white/25 bg-ink px-3 py-2 text-sm">
-        ${['Samsung', 'LG', 'Otra marca'].map(m => `<option${m === marca ? ' selected' : ''}>${m}</option>`).join('')}
+        ${['', 'Samsung', 'LG', 'Sony', 'TCL', 'Hisense', 'Otra'].map(m => `<option value="${m}"${m === marca ? ' selected' : ''}>${m || 'No sé / prefiero no decirla'}</option>`).join('')}
       </select>
     </div>
     <a id="enviar" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 rounded-lg bg-wa px-6 py-3.5 font-semibold text-white hover:brightness-110">
       <svg class="size-5"><use href="assets/icons/sprite.svg#wa"/></svg>Enviar este diagnóstico por WhatsApp</a>`;
   const enviar = $('#enviar');
-  const link = () => enviar.href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(msg.replace(/televisor \S+ tiene/, `televisor ${marca} tiene`))}`;
+  const link = () => enviar.href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(msg())}`;
   $('#marca').addEventListener('change', e => { marca = e.target.value; link(); });
   link();
 }

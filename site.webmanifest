@@ -1,6 +1,6 @@
 {
-  "name": "PestañaTech",
-  "short_name": "PestañaTech",
+  "name": "PestanaTech",
+  "short_name": "PestanaTech",
   "description": "Servicio técnico de TV, LEDs y computadores.",
   "start_url": "/",
   "display": "standalone",
