@@ -64,6 +64,16 @@
   ]
 }
 </script>
+<style>
+/* Sección de servicios: fondo con tono, tarjetas blancas y botón de acción */
+.svc-bg{background:#e4ecf3}
+.svc-list{display:grid;gap:1.25rem}
+.svc-card{background:#fff;border:1px solid rgba(10,26,47,.08);border-left:4px solid #0b6f8e;border-radius:.875rem;padding:1.5rem;box-shadow:0 1px 2px rgba(10,26,47,.06),0 8px 24px rgba(10,26,47,.07);transition:transform .2s ease,box-shadow .2s ease}
+.svc-card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(10,26,47,.08),0 14px 32px rgba(10,26,47,.12)}
+.svc-cta{display:inline-flex;align-items:center;justify-self:start;gap:.5rem;background:#0e7c43;color:#fff;font-weight:600;padding:.6rem 1.1rem;border-radius:.6rem;text-decoration:none;transition:background .2s ease}
+.svc-cta:hover{background:#0a1a2f}
+@media (prefers-reduced-motion:reduce){.svc-card,.svc-cta{transition:none}.svc-card:hover{transform:none}}
+</style>
 </head>
 
 <body class="bg-panel font-sans text-ink antialiased">
@@ -149,36 +159,36 @@
 </section>
 
 <!-- SERVICIOS -->
-<section id="servicios" class="scroll-mt-16 bg-white py-20">
+<section id="servicios" class="svc-bg scroll-mt-16 py-20">
   <div class="mx-auto max-w-6xl px-5">
     <h2 class="display max-w-2xl text-3xl font-extrabold sm:text-4xl">Servicios técnicos en Cartagena</h2>
-    <div class="mt-10 divide-y divide-ink/10 border-y border-ink/10">
-      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+    <div class="svc-list mt-10">
+      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
         <img src="assets/img/imgtv.jpg" width="392" height="404" loading="lazy" alt="Placa de un televisor abierto en reparación" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
         <div>
           <h3 class="display text-2xl font-bold">Reparación de televisores</h3>
           <p class="mt-2 max-w-xl text-ink/70">Fallas de imagen, sonido, encendido y conexión en televisores de todas las marcas: fuentes de poder, tarjetas y T-con.</p>
           <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Diagnóstico técnico</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Valor antes de reparar</span></p>
         </div>
-        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20mi%20televisor%20tiene%20una%20falla%20y%20quiero%20cotizar%20la%20reparaci%C3%B3n" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20mi%20televisor%20tiene%20una%20falla%20y%20quiero%20cotizar%20la%20reparaci%C3%B3n" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
       </article>
-      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
         <img src="assets/img/cambiodeleds.jpg" width="376" height="312" loading="lazy" alt="Tiras LED de un televisor durante el cambio" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
         <div>
           <h3 class="display text-2xl font-bold">Cambio de LEDs</h3>
           <p class="mt-2 max-w-xl text-ink/70">Si la imagen se ve oscura o se apaga a los segundos, casi siempre es la luz de fondo. Cambio las tiras y reviso la pantalla al terminar.</p>
           <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>A domicilio</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Prueba final contigo presente</span></p>
         </div>
-        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20el%20cambio%20de%20LEDs%20de%20mi%20televisor" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20el%20cambio%20de%20LEDs%20de%20mi%20televisor" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
       </article>
-      <article class="grid items-center gap-6 py-8 md:grid-cols-[200px_1fr_auto]">
+      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
         <img src="assets/img/computador.jpg" width="339" height="355" loading="lazy" alt="Computador con instalación de software" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
         <div>
           <h3 class="display text-2xl font-bold">Computadores y software</h3>
           <p class="mt-2 max-w-xl text-ink/70">Instalación y actualización de software: sistema operativo, programas y optimización para equipos de trabajo o de casa. No se hace reparación de hardware.</p>
           <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Instalación de software</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Actualización de software</span></p>
         </div>
-        <a class="inline-flex items-center gap-2 font-semibold text-brand hover:underline" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20instalaci%C3%B3n%20o%20actualizaci%C3%B3n%20de%20software%20en%20mi%20computador" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
+        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20instalaci%C3%B3n%20o%20actualizaci%C3%B3n%20de%20software%20en%20mi%20computador" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
       </article>
     </div>
   </div>
