@@ -2,13 +2,12 @@
 <style>
   #chat-widget-container {
     position: fixed;
-    bottom: 90px; /* Se ubica arriba del botón de WhatsApp */
+    bottom: 90px;
     right: 20px;
     z-index: 9999;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  /* Ventana de Chat */
   #chat-widget-box {
     width: 340px;
     max-width: calc(100vw - 32px);
@@ -32,7 +31,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* Encabezado del Chat */
   .chat-header {
     background: #0f172a;
     color: #ffffff;
@@ -75,7 +73,6 @@
   }
   .chat-close-btn:hover { color: #ffffff; }
 
-  /* Cuerpo del Chat */
   .chat-body {
     padding: 14px;
     background: #f8fafc;
@@ -95,7 +92,6 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
 
-  /* Formularios e Inputs */
   .chat-field {
     margin-bottom: 8px;
   }
@@ -131,7 +127,6 @@
     background: #1d4ed8;
   }
 
-  /* Botón Flotante (Burbuja) */
   .chat-launcher-btn {
     position: fixed;
     bottom: 90px;
@@ -165,7 +160,6 @@
     border-radius: 50%;
   }
 
-  /* RESPONSIVE MÓVIL (Para pantallas < 480px) */
   @media (max-width: 480px) {
     #chat-widget-container {
       right: 12px;
@@ -184,22 +178,18 @@
       font-size: 20px;
     }
     .chat-body {
-      max-height: 60vh; /* Permite scroll cómodo si la pantalla del cel es muy pequeña */
+      max-height: 60vh;
     }
   }
 </style>
 
-<!-- Botón Burbuja para abrir el Chat -->
 <button class="chat-launcher-btn" onclick="toggleChatWidget()" title="Asistente de Diagnóstico">
   💬
   <span class="chat-badge"></span>
 </button>
 
-<!-- Caja del Chat -->
 <div id="chat-widget-container">
   <div id="chat-widget-box">
-    
-    <!-- Header -->
     <div class="chat-header">
       <div class="chat-header-info">
         <div class="chat-avatar">👨‍🔧</div>
@@ -211,7 +201,6 @@
       <button class="chat-close-btn" onclick="toggleChatWidget()">&times;</button>
     </div>
 
-    <!-- Body -->
     <div class="chat-body">
       <div class="chat-bubble">
         👋 <b>¡Hola!</b> ¿Tu equipo presenta fallas o no enciende? Déjanos tus datos y te enviaremos un diagnóstico preliminar a tu correo sin costo.
@@ -244,12 +233,10 @@
         ✅ ¡Excelente! Recibimos tus datos. En breve nos pondremos en contacto.
       </div>
     </div>
-
   </div>
 </div>
 
 <script>
-  // Mostrar automáticamente el chat después de 4 segundos
   setTimeout(() => {
     const box = document.getElementById('chat-widget-box');
     if (box && !box.classList.contains('active')) {
