@@ -272,7 +272,7 @@
 <script src="script.js" defer></script>
 
 <!-- ========================================================= -->
-<!-- WIDGET CHAT FLOTANTE RESPONSIVE (PESTANA TECH CAPTADOR)    -->
+<!-- WIDGET CHAT FLOTANTE RESPONSIVE (CORREGIDO Y REABRIBLE)   -->
 <!-- ========================================================= -->
 <style>
   #chat-widget-container {
@@ -281,6 +281,7 @@
     right: 20px;
     z-index: 9999;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    pointer-events: none; /* Evita bloquear clics cuando el chat está cerrado */
   }
 
   #chat-widget-box {
@@ -294,6 +295,7 @@
     display: none;
     flex-direction: column;
     transition: all 0.3s ease;
+    pointer-events: auto; /* Mantiene la interactividad dentro del chat */
   }
 
   #chat-widget-box.active {
@@ -402,6 +404,7 @@
     background: #1d4ed8;
   }
 
+  /* Botón Flotante para abrir el Chat */
   .chat-launcher-btn {
     position: fixed;
     bottom: 90px;
@@ -418,11 +421,14 @@
     align-items: center;
     justify-content: center;
     font-size: 22px;
-    z-index: 9998;
+    z-index: 10000;
     transition: transform 0.2s;
   }
   .chat-launcher-btn:hover {
     transform: scale(1.08);
+  }
+  .chat-launcher-btn.btn-hidden {
+    display: none !important;
   }
   .chat-badge {
     position: absolute;
@@ -448,8 +454,8 @@
     .chat-launcher-btn {
       right: 16px;
       bottom: 80px;
-      width: 46px;
-      height: 46px;
+      width: 48px;
+      height: 48px;
       font-size: 20px;
     }
     .chat-body {
@@ -458,11 +464,13 @@
   }
 </style>
 
-<button class="chat-launcher-btn" onclick="toggleChatWidget()" title="Asistente de Diagnóstico">
+<!-- Botón Flotante 💬 -->
+<button id="chat-launcher" class="chat-launcher-btn" onclick="toggleChatWidget()" title="Asistente de Diagnóstico">
   💬
   <span class="chat-badge"></span>
 </button>
 
+<!-- Ventana del Chat -->
 <div id="chat-widget-container">
   <div id="chat-widget-box">
     <div class="chat-header">
@@ -514,15 +522,25 @@
 <script>
   setTimeout(() => {
     const box = document.getElementById('chat-widget-box');
+    const launcher = document.getElementById('chat-launcher');
     if (box && !box.classList.contains('active')) {
       box.classList.add('active');
+      if (launcher) launcher.classList.add('btn-hidden');
     }
   }, 4000);
 
   function toggleChatWidget() {
     const box = document.getElementById('chat-widget-box');
+    const launcher = document.getElementById('chat-launcher');
     if (box) {
-      box.classList.toggle('active');
+      const isOpen = box.classList.toggle('active');
+      if (launcher) {
+        if (isOpen) {
+          launcher.classList.add('btn-hidden');
+        } else {
+          launcher.classList.remove('btn-hidden');
+        }
+      }
     }
   }
 
