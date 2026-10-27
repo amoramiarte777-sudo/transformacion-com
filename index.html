@@ -1,330 +1,280 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Técnico en televisores en Cartagena | Reparación profesional a domicilio</title>
-<meta name="description" content="Técnico profesional en televisores en Cartagena: cambio de LEDs, fuentes y tarjetas, a domicilio. Diagnóstico claro antes de reparar y 90 días de garantía." />
-<meta name="author" content="César Pestana" />
-<meta name="robots" content="index,follow,max-image-preview:large" />
-<meta name="theme-color" content="#0A1A2F" />
-<meta name="google-site-verification" content="qZ1vJ6yFG5aTCPIhpD6vGHCW72hdq1wcyWhMMaVIj8I" />
-<meta name="format-detection" content="telephone=no" />
-<link rel="canonical" href="https://tecnico.pestanatech.com/" />
-
-<meta property="og:locale" content="es_CO" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="PestanaTech" />
-<meta property="og:title" content="Técnico en televisores en Cartagena | Reparación a domicilio" />
-<meta property="og:description" content="Diagnóstico claro antes de reparar, cambio de LEDs y 90 días de garantía. Escríbeme por WhatsApp." />
-<meta property="og:url" content="https://tecnico.pestanatech.com/" />
-<meta property="og:image" content="https://tecnico.pestanatech.com/assets/img/og-pestanatech-v2.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-
-<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
-<link rel="manifest" href="site.webmanifest" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/tailwind.css" />
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["LocalBusiness", "ElectronicsStore"],
-      "@id": "https://tecnico.pestanatech.com/#negocio",
-      "name": "PestanaTech – Servicio Técnico Profesional",
-      "description": "Reparación de televisores de todas las marcas, cambio de LEDs e instalación y actualización de software en computadores, a domicilio en Cartagena.",
-      "url": "https://tecnico.pestanatech.com/",
-      "image": "https://tecnico.pestanatech.com/assets/img/og-pestanatech-v2.jpg",
-      "telephone": "+573163392695",
-      "priceRange": "$$",
-      "founder": { "@type": "Person", "name": "César Pestana" },
-      "address": { "@type": "PostalAddress", "addressLocality": "Cartagena", "addressRegion": "Bolívar", "addressCountry": "CO" },
-      "areaServed": { "@type": "City", "name": "Cartagena" },
-      "sameAs": [
-        "https://www.instagram.com/transformacionc777/?hl=es-es",
-        "https://www.facebook.com/profile.php?id=61594357433745",
-        "https://www.tiktok.com/@transformacion.tech?lang=es",
-        "https://youtube.com/shorts/0LBTBfWmjx4"
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "¿Atiendes a domicilio en Cartagena?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Reviso y reparo el equipo en tu casa cuando el caso lo permite; si necesita taller, te lo explico antes." } },
-        { "@type": "Question", "name": "¿Tienen garantía las reparaciones?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, 90 días sobre mano de obra y piezas reemplazadas, según los términos y condiciones." } },
-        { "@type": "Question", "name": "¿Cuánto cuesta reparar un televisor?", "acceptedAnswer": { "@type": "Answer", "text": "Depende de la falla y del modelo. Primero reviso, te explico qué tiene y te doy el valor antes de reparar." } }
-      ]
-    }
-  ]
-}
-</script>
+<!-- Widget Flotante estilo Chat Interactivo (100% Responsive) -->
 <style>
-/* Sección de servicios: fondo con tono, tarjetas blancas y botón de acción */
-.svc-bg{background:#e4ecf3}
-.svc-list{display:grid;gap:1.25rem}
-.svc-card{background:#fff;border:1px solid rgba(10,26,47,.08);border-left:4px solid #0b6f8e;border-radius:.875rem;padding:1.5rem;box-shadow:0 1px 2px rgba(10,26,47,.06),0 8px 24px rgba(10,26,47,.07);transition:transform .2s ease,box-shadow .2s ease}
-.svc-card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(10,26,47,.08),0 14px 32px rgba(10,26,47,.12)}
-.svc-cta{display:inline-flex;align-items:center;justify-self:start;gap:.5rem;background:#0e7c43;color:#fff;font-weight:600;padding:.6rem 1.1rem;border-radius:.6rem;text-decoration:none;transition:background .2s ease}
-.svc-cta:hover{background:#0a1a2f}
-@media (prefers-reduced-motion:reduce){.svc-card,.svc-cta{transition:none}.svc-card:hover{transform:none}}
+  #chat-widget-container {
+    position: fixed;
+    bottom: 90px; /* Se ubica arriba del botón de WhatsApp */
+    right: 20px;
+    z-index: 9999;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Ventana de Chat */
+  #chat-widget-box {
+    width: 340px;
+    max-width: calc(100vw - 32px);
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+
+  #chat-widget-box.active {
+    display: flex;
+    animation: chatPopUp 0.3s ease forwards;
+  }
+
+  @keyframes chatPopUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Encabezado del Chat */
+  .chat-header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .chat-header-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .chat-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .chat-title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .chat-subtitle {
+    font-size: 11px;
+    color: #94a3b8;
+  }
+  .chat-close-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .chat-close-btn:hover { color: #ffffff; }
+
+  /* Cuerpo del Chat */
+  .chat-body {
+    padding: 14px;
+    background: #f8fafc;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .chat-bubble {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border-top-left-radius: 2px;
+    font-size: 12px;
+    color: #334155;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  /* Formularios e Inputs */
+  .chat-field {
+    margin-bottom: 8px;
+  }
+  .chat-input, .chat-select {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #0f172a;
+    background: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .chat-input:focus, .chat-select:focus {
+    border-color: #2563eb;
+  }
+
+  .chat-btn-submit {
+    width: 100%;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 4px;
+  }
+  .chat-btn-submit:hover {
+    background: #1d4ed8;
+  }
+
+  /* Botón Flotante (Burbuja) */
+  .chat-launcher-btn {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    z-index: 9998;
+    transition: transform 0.2s;
+  }
+  .chat-launcher-btn:hover {
+    transform: scale(1.08);
+  }
+  .chat-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 11px;
+    height: 11px;
+    background: #22c55e;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  /* RESPONSIVE MÓVIL (Para pantallas < 480px) */
+  @media (max-width: 480px) {
+    #chat-widget-container {
+      right: 12px;
+      left: 12px;
+      bottom: 80px;
+    }
+    #chat-widget-box {
+      width: 100%;
+      max-width: 100%;
+    }
+    .chat-launcher-btn {
+      right: 16px;
+      bottom: 80px;
+      width: 46px;
+      height: 46px;
+      font-size: 20px;
+    }
+    .chat-body {
+      max-height: 60vh; /* Permite scroll cómodo si la pantalla del cel es muy pequeña */
+    }
+  }
 </style>
-</head>
 
-<body class="bg-panel font-sans text-ink antialiased">
+<!-- Botón Burbuja para abrir el Chat -->
+<button class="chat-launcher-btn" onclick="toggleChatWidget()" title="Asistente de Diagnóstico">
+  💬
+  <span class="chat-badge"></span>
+</button>
 
-<a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">Saltar al contenido</a>
-
-<header class="sticky top-0 z-40 border-b border-ink/10 bg-white/90 backdrop-blur">
-  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-    <a href="#inicio" class="flex items-center gap-3" aria-label="PestanaTech, inicio">
-      <img src="assets/img/logo-160.png" width="40" height="40" alt="" class="size-10 rounded-lg" />
-      <span class="leading-tight">
-        <strong class="display block text-base">PestanaTech</strong>
-        <span class="text-xs text-ink/60">Servicio técnico profesional</span>
-      </span>
-    </a>
-    <button id="menuBtn" class="rounded-lg p-2 md:hidden" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-      <svg class="size-6"><use href="assets/icons/sprite.svg#menu" /></svg>
-    </button>
-    <nav id="menu" class="absolute inset-x-0 top-16 hidden flex-col gap-1 border-b border-ink/10 bg-white p-4 text-sm font-medium md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0">
-      <a class="py-2 hover:text-brand" href="#diagnostico">Diagnóstico</a>
-      <a class="py-2 hover:text-brand" href="#servicios">Servicios</a>
-      <a class="py-2 hover:text-brand" href="#tecnico">Sobre mí</a>
-      <a class="py-2 hover:text-brand" href="#proceso">Proceso</a>
-      <a class="py-2 hover:text-brand" href="#faq">Preguntas</a>
-      <a class="inline-flex items-center justify-center gap-2 rounded-lg bg-wa px-4 py-2.5 text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20t%C3%A9cnico" target="_blank" rel="noopener">
-        <svg class="size-4"><use href="assets/icons/sprite.svg#wa" /></svg> WhatsApp
-      </a>
-    </nav>
-  </div>
-</header>
-
-<main id="contenido">
-
-<!-- HERO -->
-<section id="inicio" class="bg-ink text-white">
-  <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 md:grid-cols-[1.25fr_1fr] md:py-20">
-    <div>
-      <p class="mb-4 flex items-center gap-2 text-sm text-white/70"><span class="size-2 rounded-full bg-standby"></span>Técnico de televisores en Cartagena, Bolívar</p>
-      <h1 class="display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-6xl">Técnico profesional en televisores en Cartagena, con diagnóstico claro. </h1>
-      <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/80">Soy César Pestana, técnico con más de 25 años en electrónica. Reparo televisores de todas las marcas, cambio LEDs e instalo y actualizo software en computadores, en tu casa.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a class="inline-flex items-center gap-2 rounded-lg bg-wa px-6 py-3.5 font-semibold text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20ayuda%20con%20mi%20equipo" target="_blank" rel="noopener"><svg class="size-5"><use href="assets/icons/sprite.svg#wa" /></svg>Escribir por WhatsApp</a>
-        <a class="inline-flex items-center gap-2 rounded-lg border border-white/30 px-6 py-3.5 font-semibold hover:bg-white/10" href="#diagnostico">Diagnosticar mi TV<svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
-      </div>
-      <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/15 pt-6">
-        <div><dt class="text-sm text-white/60">Experiencia</dt><dd class="display text-xl font-bold">+25 años</dd></div>
-        <div><dt class="text-sm text-white/60">Garantía</dt><dd class="display text-xl font-bold">90 días</dd></div>
-        <div><dt class="text-sm text-white/60">Servicio</dt><dd class="display text-xl font-bold">A domicilio</dd></div>
-        <div><dt class="text-sm text-white/60">Marcas</dt><dd class="display text-xl font-bold">Todas</dd></div>
-      </dl>
-    </div>
-
-    <!-- Video dentro de un marco de televisor con su LED de standby -->
-    <div class="mx-auto w-full max-w-[280px]">
-      <div class="relative rounded-[1.4rem] border-[10px] border-b-[26px] border-[#050d18] bg-black shadow-2xl ring-1 ring-white/10">
-        <video id="heroVideo" class="aspect-[9/16] w-full rounded-lg object-cover" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-poster.jpg" aria-label="Técnico reparando un televisor">
-          <source src="video/hero.mp4" type="video/mp4" />
-        </video>
-        <span class="absolute -bottom-[18px] right-3 size-2 animate-pulse rounded-full bg-standby motion-reduce:animate-none" aria-hidden="true"></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIAGNÓSTICO -->
-<section id="diagnostico" class="mx-auto max-w-6xl scroll-mt-16 px-5 py-20">
-  <div class="max-w-2xl">
-    <h2 class="display text-3xl font-extrabold sm:text-4xl">¿Qué le pasa a tu televisor?</h2>
-    <p class="mt-4 text-lg text-ink/70">Elige lo que ves y te digo la causa más probable y qué puedes probar antes de llamar. Es una orientación: el diagnóstico real se hace con el equipo en la mano.</p>
-  </div>
-
-  <div class="mt-10 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-    <div id="sintomas" role="radiogroup" aria-label="Síntoma del televisor" class="grid gap-2"></div>
-
-    <div class="rounded-2xl bg-ink p-6 text-white sm:p-8 lg:sticky lg:top-24 lg:self-start" aria-live="polite">
-      <div class="flex items-center gap-3 text-sm text-white/70"><span id="led" class="size-2.5 rounded-full bg-standby transition-colors"></span><span id="estado">En espera: elige un síntoma</span></div>
-      <div id="resultado" class="mt-5">
-        <p class="display text-2xl font-bold">Empecemos por lo que ves en la pantalla.</p>
-        <p class="mt-3 text-white/70">Cuando elijas un síntoma verás aquí la causa probable, una prueba sencilla que puedes hacer tú y lo que haría yo en la revisión.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS -->
-<section id="servicios" class="svc-bg scroll-mt-16 py-20">
-  <div class="mx-auto max-w-6xl px-5">
-    <h2 class="display max-w-2xl text-3xl font-extrabold sm:text-4xl">Servicios técnicos en Cartagena</h2>
-    <div class="svc-list mt-10">
-      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
-        <img src="assets/img/imgtv.jpg" width="392" height="404" loading="lazy" alt="Placa de un televisor abierto en reparación" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
-        <div>
-          <h3 class="display text-2xl font-bold">Reparación de televisores</h3>
-          <p class="mt-2 max-w-xl text-ink/70">Fallas de imagen, sonido, encendido y conexión en televisores de todas las marcas: fuentes de poder, tarjetas y T-con.</p>
-          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Diagnóstico técnico</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Valor antes de reparar</span></p>
-        </div>
-        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20mi%20televisor%20tiene%20una%20falla%20y%20quiero%20cotizar%20la%20reparaci%C3%B3n" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
-      </article>
-      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
-        <img src="assets/img/cambiodeleds.jpg" width="376" height="312" loading="lazy" alt="Tiras LED de un televisor durante el cambio" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
-        <div>
-          <h3 class="display text-2xl font-bold">Cambio de LEDs</h3>
-          <p class="mt-2 max-w-xl text-ink/70">Si la imagen se ve oscura o se apaga a los segundos, casi siempre es la luz de fondo. Cambio las tiras y reviso la pantalla al terminar.</p>
-          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>A domicilio</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Prueba final contigo presente</span></p>
-        </div>
-        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20el%20cambio%20de%20LEDs%20de%20mi%20televisor" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
-      </article>
-      <article class="svc-card grid items-center gap-6 md:grid-cols-[200px_1fr_auto]">
-        <img src="assets/img/computador.jpg" width="339" height="355" loading="lazy" alt="Computador con instalación de software" class="h-40 w-full rounded-lg object-cover md:w-[200px]" />
-        <div>
-          <h3 class="display text-2xl font-bold">Computadores y software</h3>
-          <p class="mt-2 max-w-xl text-ink/70">Instalación y actualización de software: sistema operativo, programas y optimización para equipos de trabajo o de casa. No se hace reparación de hardware.</p>
-          <p class="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium"><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Instalación de software</span><span class="flex items-center gap-1.5"><svg class="size-4 text-brand"><use href="assets/icons/sprite.svg#check" /></svg>Actualización de software</span></p>
-        </div>
-        <a class="svc-cta" href="https://wa.me/573163392695?text=Hola%2C%20necesito%20instalaci%C3%B3n%20o%20actualizaci%C3%B3n%20de%20software%20en%20mi%20computador" target="_blank" rel="noopener">Cotizar <svg class="size-4"><use href="assets/icons/sprite.svg#arrow" /></svg></a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE MÍ -->
-<section id="tecnico" class="mx-auto grid max-w-6xl scroll-mt-16 items-center gap-10 px-5 py-20 md:grid-cols-2">
-  <img src="assets/img/transformacion.jpg" width="374" height="293" loading="lazy" alt="César Pestana trabajando en la tarjeta de un televisor" class="w-full rounded-2xl object-cover" />
-  <div>
-    <h2 class="display text-3xl font-extrabold sm:text-4xl">Más de 25 años entre placas, fuentes y pantallas</h2>
-    <p class="mt-5 text-lg leading-relaxed text-ink/75">Trabajo directo con cada cliente: reviso, te explico la falla en palabras sencillas y solo reparo cuando aceptas el valor. Si un televisor no vale la pena repararlo, te lo digo de frente.</p>
-    <div class="mt-6 flex flex-wrap gap-3">
-      <a data-google="profile" hidden class="inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-3 font-semibold text-white hover:bg-brand" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#pin" /></svg>Ver mi perfil en Google</a>
-      <a data-google="reviews" hidden class="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-5 py-3 font-semibold hover:bg-white" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#star" /></svg>Leer reseñas de clientes</a>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESO -->
-<section id="proceso" class="scroll-mt-16 bg-white py-20">
-  <div class="mx-auto max-w-6xl px-5">
-    <h2 class="display max-w-2xl text-3xl font-extrabold sm:text-4xl">Cómo trabajo, paso a paso</h2>
-    <ol class="mt-10 grid gap-8 md:grid-cols-3">
-      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 1</span><h3 class="display mt-1 text-xl font-bold">Me escribes por WhatsApp</h3><p class="mt-2 text-ink/70">Me cuentas la falla, la marca y, si puedes, mandas una foto. Te respondo con una primera orientación, sin compromiso.</p></li>
-      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 2</span><h3 class="display mt-1 text-xl font-bold">Reviso y te doy el valor</h3><p class="mt-2 text-ink/70">Diagnostico el equipo, te explico qué tiene y cuánto cuesta. No reparo nada sin tu aprobación.</p></li>
-      <li class="border-t-2 border-brand pt-5"><span class="display text-sm font-bold text-brand">Paso 3</span><h3 class="display mt-1 text-xl font-bold">Reparo y lo probamos juntos</h3><p class="mt-2 text-ink/70">Repongo las piezas, verificamos que todo funcione contigo presente y queda cubierto por 90 días de garantía.</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="mx-auto max-w-3xl scroll-mt-16 px-5 py-20">
-  <h2 class="display text-3xl font-extrabold sm:text-4xl">Preguntas frecuentes</h2>
-  <div class="mt-8 divide-y divide-ink/10 border-y border-ink/10">
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Atiendes a domicilio en Cartagena?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí. Reviso y reparo el equipo en tu casa cuando el caso lo permite; si necesita taller, te lo explico antes de llevármelo.</p></details>
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Reparas todas las marcas de televisores?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí, trabajo con las marcas más comunes. Mándame el modelo por WhatsApp y te confirmo si puedo repararlo.</p></details>
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Cuánto cuesta reparar un televisor?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Depende de la falla y del modelo. Primero reviso, te explico qué tiene y te doy el valor antes de reparar.</p></details>
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Tiene garantía la reparación?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Sí, 90 días sobre mano de obra y piezas reemplazadas. No cubre golpes, humedad, variaciones eléctricas ni intervenciones de terceros. Está detallado en los <a class="underline" href="terms.html">términos y condiciones</a>.</p></details>
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿Y si mi televisor ya no tiene arreglo?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Te lo digo antes de gastar. Un panel roto o con manchas negras por golpe casi nunca es rentable de reparar.</p></details>
-    <details class="group py-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">¿También arreglas computadores?<span class="text-brand transition group-open:rotate-45">+</span></summary><p class="mt-3 text-ink/70">Solo software: instalación y actualización de programas y del sistema operativo. No hago reparación de hardware (equipos que no encienden, cambio de pantalla, etc.).</p></details>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto" class="bg-ink py-20 text-white">
-  <div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[1.2fr_1fr]">
-    <div>
-      <h2 class="display text-3xl font-extrabold sm:text-4xl">¿Tu televisor está fallando o tu computador necesita software?</h2>
-      <p class="mt-4 max-w-lg text-lg text-white/75">Escríbeme por WhatsApp y te respondo con un diagnóstico claro y sin compromiso.</p>
-      <a class="mt-8 inline-flex items-center gap-2 rounded-lg bg-wa px-7 py-4 font-semibold text-white hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20servicio" target="_blank" rel="noopener"><svg class="size-5"><use href="assets/icons/sprite.svg#wa" /></svg>Escribir ahora</a>
-    </div>
-    <div class="grid gap-8 sm:grid-cols-2">
-      <div class="grid content-start gap-3">
-        <h3 class="display font-bold">Contacto</h3>
-        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="tel:+573163392695"><svg class="size-4"><use href="assets/icons/sprite.svg#phone" /></svg>316 339 2695</a>
-        <span class="flex items-center gap-2 text-white/80"><svg class="size-4"><use href="assets/icons/sprite.svg#pin" /></svg>Cartagena, Colombia</span>
-        <a data-google="profile" hidden class="flex items-center gap-2 text-white/80 hover:text-white" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#star" /></svg>Google Maps y reseñas</a>
-      </div>
-      <div class="grid content-start gap-3">
-        <h3 class="display font-bold">Redes</h3>
-        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.instagram.com/transformacionc777/?hl=es-es" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#ig" /></svg>Instagram</a>
-        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.facebook.com/profile.php?id=61594357433745" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#fb" /></svg>Facebook</a>
-        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://www.tiktok.com/@transformacion.tech?lang=es" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#tt" /></svg>TikTok</a>
-        <a class="flex items-center gap-2 text-white/80 hover:text-white" href="https://youtube.com/shorts/0LBTBfWmjx4" target="_blank" rel="noopener"><svg class="size-4"><use href="assets/icons/sprite.svg#yt" /></svg>YouTube</a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="bg-[#06111f] py-6 text-sm text-white/60">
-  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5">
-    <p>© <span id="year"></span> PestanaTech · Servicio técnico profesional</p>
-    <p><a class="underline hover:text-white" href="terms.html">Términos y condiciones</a> · <a class="underline hover:text-white" href="terminos_condiciones.pdf" target="_blank" rel="noopener">PDF</a></p>
-  </div>
-</footer>
-
-<a class="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-wa text-white shadow-lg hover:brightness-110" href="https://wa.me/573163392695?text=Hola%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg class="size-7"><use href="assets/icons/sprite.svg#wa" /></svg></a>
-
-<script src="script.js" defer></script>
-
-
-<!-- Red de Pescar: Widget Flotante de Captura -->
-<div id="widget-pescar" class="fixed bottom-5 right-5 z-50 max-w-sm w-full bg-white rounded-2xl shadow-2xl border border-gray-200 p-5 hidden transition-all duration-300">
-  <button onclick="cerrarWidget()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold">&times;</button>
-  
-  <div class="flex items-center gap-3 mb-3">
-    <span class="text-2xl">👨‍🔧</span>
-    <div>
-      <h3 class="text-sm font-bold text-gray-800">¿Tu equipo falla o no enciende?</h3>
-      <p class="text-xs text-gray-500">Recibe un diagnóstico previo y propuesta sin costo.</p>
-    </div>
-  </div>
-
-  <form id="form-captura-web" onsubmit="enviarProspecto(event)" class="space-y-3">
-    <input type="text" id="nombre_cliente" placeholder="Tu nombre" required class="w-full text-xs p-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-    <input type="email" id="correo_cliente" placeholder="Tu correo electrónico" required class="w-full text-xs p-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-    <input type="tel" id="telefono_cliente" placeholder="WhatsApp / Teléfono" required class="w-full text-xs p-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-    <select id="equipo_falla" class="w-full text-xs p-2.5 border rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none">
-      <option value="Televisor">Televisor (TV)</option>
-      <option value="Computador">Computador / Laptop</option>
-      <option value="Otro">Otro equipo electrónico</option>
-    </select>
+<!-- Caja del Chat -->
+<div id="chat-widget-container">
+  <div id="chat-widget-box">
     
-    <button type="submit" id="btn-enviar-pescar" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs py-2.5 rounded-lg transition-colors">
-      Solicitar Diagnóstico
-    </button>
-  </form>
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">👨‍🔧</div>
+        <div>
+          <div class="chat-title">Soporte PestanaTech</div>
+          <div class="chat-subtitle">En línea • Diagnóstico gratuito</div>
+        </div>
+      </div>
+      <button class="chat-close-btn" onclick="toggleChatWidget()">&times;</button>
+    </div>
 
-  <p id="msg-exito" class="text-xs text-green-600 font-semibold mt-2 hidden text-center">
-    ✅ ¡Datos recibidos! Revisa tu correo en breve.
-  </p>
+    <!-- Body -->
+    <div class="chat-body">
+      <div class="chat-bubble">
+        👋 <b>¡Hola!</b> ¿Tu equipo presenta fallas o no enciende? Déjanos tus datos y te enviaremos un diagnóstico preliminar a tu correo sin costo.
+      </div>
+
+      <form id="chat-form-captura" onsubmit="enviarProspectoChat(event)">
+        <div class="chat-field">
+          <input type="text" id="chat_nombre" placeholder="Tu nombre" required class="chat-input">
+        </div>
+        <div class="chat-field">
+          <input type="email" id="chat_correo" placeholder="Tu correo electrónico" required class="chat-input">
+        </div>
+        <div class="chat-field">
+          <input type="tel" id="chat_telefono" placeholder="WhatsApp / Teléfono" required class="chat-input">
+        </div>
+        <div class="chat-field">
+          <select id="chat_equipo" class="chat-select">
+            <option value="Televisor">Televisor (TV)</option>
+            <option value="Computador">Computador / Laptop</option>
+            <option value="Otro">Otro equipo electrónico</option>
+          </select>
+        </div>
+
+        <button type="submit" id="chat-btn-enviar" class="chat-btn-submit">
+          Solicitar Diagnóstico
+        </button>
+      </form>
+
+      <div id="chat-msg-exito" style="display: none; text-align: center; padding: 10px; color: #16a34a; font-weight: 600; font-size: 13px;">
+        ✅ ¡Excelente! Recibimos tus datos. En breve nos pondremos en contacto.
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script>
-  // Mostrar el anzuelo a los 4 segundos de ingresar a la página
+  // Mostrar automáticamente el chat después de 4 segundos
   setTimeout(() => {
-    document.getElementById('widget-pescar').classList.remove('hidden');
+    const box = document.getElementById('chat-widget-box');
+    if (box && !box.classList.contains('active')) {
+      box.classList.add('active');
+    }
   }, 4000);
 
-  function cerrarWidget() {
-    document.getElementById('widget-pescar').classList.add('hidden');
+  function toggleChatWidget() {
+    const box = document.getElementById('chat-widget-box');
+    if (box) {
+      box.classList.toggle('active');
+    }
   }
 
-  async function enviarProspecto(e) {
+  async function enviarProspectoChat(e) {
     e.preventDefault();
-    const btn = document.getElementById('btn-enviar-pescar');
+    const btn = document.getElementById('chat-btn-enviar');
     btn.disabled = true;
     btn.innerText = "Enviando...";
 
     const datos = {
-      nombre: document.getElementById('nombre_cliente').value,
-      correo: document.getElementById('correo_cliente').value,
-      telefono: document.getElementById('telefono_cliente').value,
-      equipo: document.getElementById('equipo_falla').value
+      nombre: document.getElementById('chat_nombre').value,
+      correo: document.getElementById('chat_correo').value,
+      telefono: document.getElementById('chat_telefono').value,
+      equipo: document.getElementById('chat_equipo').value
     };
 
     try {
@@ -335,17 +285,18 @@
       });
 
       if (response.ok) {
-        document.getElementById('form-captura-web').reset();
-        document.getElementById('msg-exito').classList.remove('hidden');
-        setTimeout(cerrarWidget, 4000);
+        document.getElementById('chat-form-captura').reset();
+        document.getElementById('chat-form-captura').style.display = 'none';
+        document.getElementById('chat-msg-exito').style.display = 'block';
+        setTimeout(() => {
+          toggleChatWidget();
+        }, 3500);
       }
     } catch (err) {
-      alert('Ocurrió un error al enviar. Intenta nuevamente.');
+      alert('Error de conexión. Inténtalo de nuevo.');
     } finally {
       btn.disabled = false;
       btn.innerText = "Solicitar Diagnóstico";
     }
   }
 </script>
-</body>
-</html>
